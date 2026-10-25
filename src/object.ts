@@ -44,7 +44,6 @@ export function pick<T extends object, K extends keyof T>(
  * }) // { A: 2, B: 4, C: 6 }
  * ```
  */
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const objectMap = <T extends Record<string, any>, U>(
 	obj: T,
 	{
