@@ -1,5 +1,5 @@
-import { formatFullname, getLocalizedValue, parseLocale } from "./i18n";
 import { describe, expect, it } from "vitest";
+import { formatFullname, getLocalizedValue, parseLocale } from "./i18n";
 
 describe("getLocalizedValue", () => {
 	const greetings = {
