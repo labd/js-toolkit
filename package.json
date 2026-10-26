@@ -20,6 +20,9 @@
 		"type": "git",
 		"url": "git+https://github.com/labd/js-toolkit.git"
 	},
+	"engines": {
+		"node": ">=22"
+	},
 	"packageManager": "pnpm@12.12.1",
 	"publishConfig": {
 		"access": "public",
