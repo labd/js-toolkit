@@ -39,8 +39,7 @@
 		"format": "biome check --fix",
 		"lint": "biome check",
 		"check": "biome check && tsc --noEmit",
-		"publish:version": "pnpm changeset version && pnpm format",
-		"lint:package": "publint --strict"
+		"publish:version": "pnpm changeset version && pnpm format"
 	},
 	"files": [
 		"dist",
