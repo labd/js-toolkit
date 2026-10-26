@@ -2,4 +2,4 @@
 "@labdigital/toolkit": minor
 ---
 
-Breaking: require Node.js 22 or newer.
+Require Node.js >= 22: `engines.node` is now `>=22`, older Node.js versions are no longer supported.
