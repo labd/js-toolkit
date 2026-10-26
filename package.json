@@ -18,11 +18,12 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/labd/js-toolkit"
+		"url": "git+https://github.com/labd/js-toolkit.git"
 	},
 	"packageManager": "pnpm@12.12.1",
 	"publishConfig": {
-		"access": "public"
+		"access": "public",
+		"provenance": true
 	},
 	"scripts": {
 		"build": "tsdown",
@@ -33,7 +34,8 @@
 		"tsc": "tsc --noEmit",
 		"format": "biome check --fix",
 		"lint": "biome check",
-		"check": "biome check && tsc --noEmit"
+		"check": "biome check && tsc --noEmit",
+		"publish:version": "pnpm changeset version && pnpm format"
 	},
 	"files": [
 		"dist",
