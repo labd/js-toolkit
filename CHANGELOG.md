@@ -1,5 +1,15 @@
 # @labdigital/toolkit
 
+## 0.3.0
+
+### Minor Changes
+
+- 8ad7fc9: Require Node.js >= 22: `engines.node` is now `>=22`, older Node.js versions are no longer supported.
+
+### Patch Changes
+
+- 3b2dc6e: Fix the package exports: the package is ESM-only (it never shipped a CommonJS build), so drop the `require` condition that pointed to a non-existent `dist/index.cjs` and add `types`/`default` conditions. Also mark the package as side-effect free.
+
 ## 0.2.0
 
 ### Minor Changes
